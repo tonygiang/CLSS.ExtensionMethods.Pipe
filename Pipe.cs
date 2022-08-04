@@ -22,11 +22,15 @@ namespace CLSS
     /// Takes an object, passes it as an argument to the specified function,
     /// returns the result.
     /// </summary>
-    /// <typeparam name="T">The type of <paramref name="arg"/>.</typeparam>
-    /// <typeparam name="TResult">The return type of <paramref name="func"/>.
+    /// <typeparam name="T">
+    /// <inheritdoc cref="Pipe{T}(T, Action{T})" path="/typeparam[@name='T]"/>
     /// </typeparam>
-    /// <param name="arg">The object to be used as the argument to
-    /// <paramref name="func"/>.</param>
+    /// <typeparam name="TResult">
+    /// <inheritdoc cref="Pipe{T}(T, Action{T})"
+    /// path="/typeparam[@name='TResult']"/></typeparam>
+    /// <param name="arg">
+    /// <inheritdoc cref="Pipe{T}(T, Action{T})"
+    /// path="/param[@name='arg']"/></param>
     /// <param name="func">The function to be executed with
     /// <paramref name="arg"/> as the argument.</param>
     /// <returns>The result of calling the specified function.</returns>
@@ -37,14 +41,21 @@ namespace CLSS
     /// Takes an object, passes it as an argument to the specified action,
     /// returns the source object.
     /// </summary>
-    /// <typeparam name="T">The type of <paramref name="arg"/>.</typeparam>
-    /// <typeparam name="TResult">The return type of <paramref name="func"/>.
+    /// <typeparam name="T">
+    /// <inheritdoc cref="Pipe{T}(T, Action{T})" path="/typeparam[@name='T]"/>
     /// </typeparam>
-    /// <param name="arg">The object to be used as the argument to
-    /// <paramref name="func"/>.</param>
-    /// <param name="func">The function to be executed with
-    /// <paramref name="arg"/> as the argument.</param>
-    /// <returns>The result of calling the specified function.</returns>
+    /// <typeparam name="TResult">
+    /// <inheritdoc cref="Pipe{T}(T, Action{T})"
+    /// path="/typeparam[@name='TResult']"/></typeparam>
+    /// <param name="arg">
+    /// <inheritdoc cref="Pipe{T}(T, Action{T})"
+    /// path="/param[@name='arg']"/></param>
+    /// <param name="func">
+    /// <inheritdoc cref="Pipe{T, TResult}(T, Func{T, TResult})"
+    /// path="/param[@name='func']"/></param>
+    /// <returns>
+    /// <inheritdoc cref="Pipe{T}(T, Action{T})"
+    /// path="/returns"/></returns>
     public static T PipeKeep<T, TResult>(this T arg, Func<T, TResult> func)
     { func(arg); return arg; }
   }
