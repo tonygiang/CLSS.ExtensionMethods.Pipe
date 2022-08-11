@@ -51,4 +51,6 @@ If passed in a `void` method, `Pipe` returns the caller object.
 
 This package also provides the `PipeKeep` extension method if you want to return the caller object even when passing in a method with non-`void` return type.
 
+Version 1.2.0 of this package added support for Converter (.NET Standard 2.0 only) and Predicate delegates from BCL.
+
 ##### This package is a part of the [C# Language Syntactic Sugar suite](https://github.com/tonygiang/CLSS).
