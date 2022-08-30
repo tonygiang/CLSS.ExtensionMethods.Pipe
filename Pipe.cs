@@ -23,11 +23,9 @@ namespace CLSS
     /// returns the result.
     /// </summary>
     /// <typeparam name="T">
-    /// <inheritdoc cref="Pipe{T}(T, Action{T})" path="/typeparam[@name='T]"/>
+    /// <inheritdoc cref="Pipe{T}(T, Action{T})" path="/typeparam[@name='T']"/>
     /// </typeparam>
-    /// <typeparam name="TResult">
-    /// <inheritdoc cref="Pipe{T}(T, Action{T})"
-    /// path="/typeparam[@name='TResult']"/></typeparam>
+    /// <typeparam name="TResult">The return type of <paramref name="func"/>.</typeparam>
     /// <param name="arg">
     /// <inheritdoc cref="Pipe{T}(T, Action{T})"
     /// path="/param[@name='arg']"/></param>
@@ -42,10 +40,10 @@ namespace CLSS
     /// returns the source object.
     /// </summary>
     /// <typeparam name="T">
-    /// <inheritdoc cref="Pipe{T}(T, Action{T})" path="/typeparam[@name='T]"/>
+    /// <inheritdoc cref="Pipe{T}(T, Action{T})" path="/typeparam[@name='T']"/>
     /// </typeparam>
     /// <typeparam name="TResult">
-    /// <inheritdoc cref="Pipe{T}(T, Action{T})"
+    /// <inheritdoc cref="Pipe{T, TResult}(T, Func{T, TResult})"
     /// path="/typeparam[@name='TResult']"/></typeparam>
     /// <param name="arg">
     /// <inheritdoc cref="Pipe{T}(T, Action{T})"
